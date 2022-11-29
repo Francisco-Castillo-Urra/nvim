@@ -16,8 +16,6 @@ Plug 'feline-nvim/feline.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'windwp/nvim-autopairs'
-Plug 'marioortizmanero/adoc-pdf-live.nvim'
-Plug 'makerj/vim-pdf'
 Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 "}}}
@@ -25,9 +23,6 @@ call plug#end()
 nnoremap <C-n> :NvimTreeToggle<CR>
 let mapleader=" "
 
-"}}}
-"Temas{{{
-colorscheme catppuccin
 "}}}
 "Configuraciones Plugins {{{
 so $HOME/.config/nvim/coc.vim

@@ -1,19 +1,3 @@
--- PDF Reader {{{
-require('adoc_pdf_live').setup {
-    enabled = false,
-    -- The viewer command must be like `command <file>`
-    viewer = 'zathura',
-    binary = 'asciidoctor-pdf',
-    params = '',
-    debug = false,
-    style = '',
-    style_regex = 'style\\.ya?ml'
-}
--- }}}
--- Feline {{{
-require("feline").setup({
-})
---}}}
 -- IndentBlankline {{{
 vim.opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
@@ -53,3 +37,48 @@ require'nvim-treesitter.configs'.setup {
 -- AutoPairs {{{
 require("nvim-autopairs").setup{}
 -- }}}
+-- Catpuccin {{{
+require("catppuccin").setup({
+    flavour = "frappe", -- latte, frappe, macchiato, mocha
+    background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+    },
+    compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
+    transparent_background = false,
+    term_colors = true,
+    dim_inactive = {
+        enabled = false,
+        shade = "dark",
+        percentage = 0.15,
+    },
+    styles = {
+        comments = { "italic" },
+        conditionals = { "italic" },
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+    },
+    color_overrides = {},
+    custom_highlights = {},
+    integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        telescope = true,
+        treesitter = true,
+        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+    },
+})
+vim.cmd.colorscheme "catppuccin"
+-- }}}
+-- Feline {{{
+
+--}}}
