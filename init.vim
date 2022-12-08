@@ -17,6 +17,11 @@ Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'windwp/nvim-autopairs'
 Plug 'christoomey/vim-tmux-navigator'
+<<<<<<< HEAD
+=======
+Plug 'EdenEast/nightfox.nvim' " Vim-Plug
+Plug 'nanozuki/tabby.nvim'
+>>>>>>> 87a050d (Tema NightFox, agregado tabby)
 call plug#end()
 "}}}
 "Atajos de teclado {{{
