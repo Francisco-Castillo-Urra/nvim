@@ -37,7 +37,6 @@ require'nvim-treesitter.configs'.setup {
 -- AutoPairs {{{
 require("nvim-autopairs").setup{}
 -- }}}
-<<<<<<< HEAD
 -- Catpuccin {{{
 require("catppuccin").setup({
     flavour = "frappe", -- latte, frappe, macchiato, mocha
@@ -83,7 +82,6 @@ vim.cmd.colorscheme "catppuccin"
 -- Feline {{{
 
 --}}}
-=======
 -- NightFox {{{
 -- Default options
 require('nightfox').setup({
@@ -816,4 +814,3 @@ require("tabby").setup({
   tabline = line,
 })
 -- }}}
->>>>>>> 87a050d (Tema NightFox, agregado tabby)
