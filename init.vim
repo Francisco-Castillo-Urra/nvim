@@ -4,6 +4,8 @@ set number
 set relativenumber
 set mouse=a
 set foldmethod=marker
+set tabstop=4
+set expandtab
 "}}}
 "Plugins {{{
 call plug#begin('$HOME/.config/nvim/plugged')
