@@ -1,9 +1,4 @@
 local function open_nvim_tree(data)
-  local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
-  if no_name then
-        require("nvim-tree.api").tree.toggle({ focus = false, find_file = true, })
-  end
-  -- buffer is a directory
   local directory = vim.fn.isdirectory(data.file) == 1
 
   if not directory then
