@@ -37,3 +37,4 @@ require'nvim-treesitter.configs'.setup {
 -- AutoPairs {{{
 require("nvim-autopairs").setup{}
 -- }}}
+require('live-server').setup(opts)
