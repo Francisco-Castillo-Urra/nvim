@@ -12,18 +12,18 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-  use {'barrett-ruth/live-server.nvim', run='yarn global add live-server'}
   use 'wbthomason/packer.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'lukas-reineke/indent-blankline.nvim'
   use {'neoclide/coc.nvim',branch='release'}
-  use 'feline-nvim/feline.nvim'
+  --use 'feline-nvim/feline.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-autopairs'
   use 'christoomey/vim-tmux-navigator'
-  use 'EdenEast/nightfox.nvim'
-  use 'nanozuki/tabby.nvim'
+  use 'itchyny/lightline.vim'
+  use { "catppuccin/nvim", as = "catppuccin" }
+  --use 'nanozuki/tabby.nvim'
   use {
   'glepnir/dashboard-nvim',
   event = 'VimEnter',

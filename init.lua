@@ -5,11 +5,10 @@ vim.opt.termguicolors = true
 vim.opt.relativenumber = true
 vim.opt.mouse = a
 vim.opt.number = true
+vim.opt.showmode = false
 vim.g.mapleader = " "
 require('plugins/packer')
-require('general')
 require('NvimTree')
-require('Feline')
+require('theme')
 require('coc')
-require('Tabby')
-require('NightFox')
+vim.cmd('source $HOME/AppData/Local/nvim/lua/lightline.vim')
